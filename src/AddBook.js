@@ -40,6 +40,7 @@ export function AddBook() {
       poster: "",
       rating: "",
       summary: "",
+      id:""
     },
     validationSchema: bookValidationSchema,
     onSubmit: (newBook) => {
@@ -121,6 +122,16 @@ export function AddBook() {
         onBlur={formik.handleBlur}
         value={formik.values.authors}
         label="author"
+        sx={{ backgroundColor:"white",borderRadius: "10px", margin: "10px" }}
+      />
+        <TextField
+        id="id"
+        name="id"
+        variant="outlined"
+        onChange={formik.handleChange}
+        onBlur={formik.handleBlur}
+        value={formik.values.id}
+        label="id"
         sx={{ backgroundColor:"white",borderRadius: "10px", margin: "10px" }}
       />
       {formik.touched.summary && formik.errors.summary

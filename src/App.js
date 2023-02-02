@@ -1,13 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import { Routes, Route, useNavigate } from "react-router-dom";
-import { Home } from "./Home";
-import Button from "@mui/material/Button";
 import { BookDetail } from "./BookDetail";
-import { ThemeProvider } from "@mui/material/styles";
-import CssBaseline from "@mui/material/CssBaseline";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
 import { BookList } from "./BookList";
 import { AddBook } from "./AddBook";
 import { EditBook } from "./EditBook";

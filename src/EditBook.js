@@ -4,7 +4,6 @@ import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import { API } from "./Source";
-import { hover } from "@testing-library/user-event/dist/hover";
 
 export function EditBook() {
   const { bookid } = useParams();
@@ -27,7 +26,7 @@ function EditBookForm({ book }) {
   const [poster, setPoster] = useState(book.poster);
   const [rating, setRating] = useState(book.rating);
   const [summary, setSummary] = useState(book.summary);
-  const [author, setAuthor] = useState(book.Authors);
+  const [author, setAuthor] = useState(book.authors);
   const navigate = useNavigate();
 
   return (
